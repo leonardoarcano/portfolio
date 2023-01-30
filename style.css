@@ -1,0 +1,169 @@
+
+body,html{
+    color: white;
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+/*NavBar*/
+#navbar a:hover{
+    color:#F5D300;
+}
+#navbar {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.90);
+}
+
+.custom-toggler {
+    border: 1px solid #F5D300
+}
+.fa-bars{
+    color: #F5D300;
+}
+
+.nav-item{
+    border-bottom: 1px solid white;
+}
+.navbar {
+    background-color:black;
+    height: 4em;
+}
+/*NavBar ends*/
+#landing{
+    height: 100vh;
+}
+
+/*frase com animação de typing-text*/
+
+.line{
+    font-family: 'Space Mono', monospace;
+    font-size: 1.2em;
+    padding: 2px;
+    border-right: 1.5px solid rgba(255,255,255,.8);
+    width: 290px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.typing-animation{
+    animation: blinkCursor 700ms infinite normal, typing 5s steps(45) normal;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 290px;
+    }
+}
+@keyframes blinkCursor{
+from{
+border-right-color: rgba(255,255,255,.8);
+} 
+to{
+border-right-color: transparent;
+}
+}
+/*fim da animação*/
+
+/*Sobre mim*/
+
+
+
+/*overlay das imagens*/
+
+
+.image{
+    position:relative;
+    width:400px ;
+}
+
+.image-img{
+    display: block;
+    width: 100%;
+
+}
+
+.image-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    display: flex;
+    font-family: "Quicksand", sans-serif;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+/* deixar a imagem embaçada (blur effect)*/
+.image-overlay--blur{
+    backdrop-filter: blur(4px);
+}
+
+/*Fazer o texto vir de baixo para o meio*/
+.image-overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image-overlay:hover > *{
+    transform: translateY(0);
+}
+/**/
+
+.image-overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image-title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image-description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+
+.caixa{
+    padding-top: 5em;
+    padding-bottom: 2.5em;
+}
+
+#avatar{
+    width: 70%;
+ }
+
+h1{
+    margin-bottom: 2em;
+}
+
+.bg-custom-grey{
+    background: #1a1a1a;
+}
+
+footer{
+    padding: 2em 0;
+}
+
+.reveal-1, .reveal-2, .reveal-3, .reveal-4, .reveal-btn{
+    visibility: hidden;
+}
+
+@media (max-width:500px){
+    .image-overlay{
+        opacity: 1;
+    }
+    .image-overlay--blur{
+        backdrop-filter: blur(0.7px);
+    }
+}
+.fa-brands{
+    margin-right: 10px;
+}
