@@ -6,12 +6,14 @@ body,html{
 }
 
 /*NavBar*/
-#navbar a:hover{
-    color:#F5D300;
-}
 #navbar {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.90);
+    font-size: 18px;
+}
+
+#navbar a:hover{
+    color:#F5D300
 }
 
 .custom-toggler {
@@ -40,12 +42,12 @@ body,html{
     font-size: 1.2em;
     padding: 2px;
     border-right: 1.5px solid rgba(255,255,255,.8);
-    width: 290px;
+    width: 260px;
     white-space: nowrap;
     overflow: hidden;
 }
 .typing-animation{
-    animation: blinkCursor 700ms infinite normal, typing 5s steps(45) normal;
+    animation: blinkCursor 600ms infinite normal, typing 3s steps(45) normal;
 }
 
 @keyframes typing{
@@ -53,7 +55,7 @@ body,html{
         width: 0;
     }
     to{
-        width: 290px;
+        width: 260px;
     }
 }
 @keyframes blinkCursor{
@@ -81,7 +83,6 @@ border-right-color: transparent;
 .image-img{
     display: block;
     width: 100%;
-
 }
 
 .image-overlay{
@@ -106,6 +107,8 @@ border-right-color: transparent;
 }
 
 /*Fazer o texto vir de baixo para o meio*/
+
+@media(min-width:768px){
 .image-overlay > * {
     transform: translateY(20px);
     transition: transform 0.25s;
@@ -114,6 +117,8 @@ border-right-color: transparent;
 .image-overlay:hover > *{
     transform: translateY(0);
 }
+}
+
 /**/
 
 .image-overlay:hover{
@@ -156,7 +161,7 @@ footer{
     visibility: hidden;
 }
 
-@media (max-width:500px){
+@media (max-width:768px){
     .image-overlay{
         opacity: 1;
     }
