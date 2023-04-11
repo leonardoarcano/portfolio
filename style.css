@@ -6,14 +6,16 @@ body,html{
 }
 
 /*NavBar*/
+
 #navbar {
     text-align: center;
     background-color: rgba(0, 0, 0, 0.90);
     font-size: 18px;
+    transition: all 1s;
 }
 
 #navbar a:hover{
-    color:#F5D300
+    color:#F5D300;
 }
 
 .custom-toggler {
@@ -42,7 +44,7 @@ body,html{
     font-size: 1.2em;
     padding: 2px;
     border-right: 1.5px solid rgba(255,255,255,.8);
-    width: 260px;
+    width: 425px;
     white-space: nowrap;
     overflow: hidden;
 }
@@ -55,7 +57,7 @@ body,html{
         width: 0;
     }
     to{
-        width: 260px;
+        width: 425px;
     }
 }
 @keyframes blinkCursor{
@@ -73,16 +75,19 @@ border-right-color: transparent;
 
 
 /*overlay das imagens*/
-
+.bold{
+    font-weight: bold;
+}
 
 .image{
     position:relative;
-    width:400px ;
+    width:400px;
 }
 
 .image-img{
     display: block;
     width: 100%;
+    border-radius: 10px;
 }
 
 .image-overlay{
@@ -146,7 +151,7 @@ border-right-color: transparent;
  }
 
 h1{
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 
 .bg-custom-grey{
@@ -168,7 +173,4 @@ footer{
     .image-overlay--blur{
         backdrop-filter: blur(0.7px);
     }
-}
-.fa-brands{
-    margin-right: 10px;
 }
